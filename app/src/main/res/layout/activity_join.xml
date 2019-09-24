@@ -6,14 +6,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".LoginActivity">
-
-    <ProgressBar
-        android:id="@+id/login_progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone" />
+    tools:context=".activity.LoginActivity">
 
     <ScrollView
         android:id="@+id/login_form"
@@ -31,7 +24,7 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:id="@+id/email"
+                    android:id="@+id/join_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="이메일"
@@ -46,7 +39,7 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/join_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="비밀번호"
@@ -57,13 +50,12 @@
             </android.support.design.widget.TextInputLayout>
 
 
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/name"
+                    android:id="@+id/join_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="이름"
@@ -74,7 +66,7 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/sign_up_button"
+                android:id="@+id/join_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -83,4 +75,11 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/join_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
 </FrameLayout>
